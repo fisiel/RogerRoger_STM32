@@ -5,7 +5,9 @@
 
 #define DATA_TRANSMISSION_STOP '\n'
 
-void send_byte(uint8_t byte, USART_TypeDef *USART);
-uint8_t receive_byte(USART_TypeDef *USART);
+void send_byte(USART_TypeDef *USARTx, uint8_t byte);
+void send_data(USART_TypeDef *USARTx, uint8_t *data);
+uint8_t receive_byte(USART_TypeDef *USARTx);
+void receive_data(USART_TypeDef *USARTx, uint8_t *data);
 
 #endif /* WEED_PROTOCOL_H_ */
