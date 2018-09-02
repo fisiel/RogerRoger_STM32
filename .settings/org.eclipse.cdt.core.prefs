@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+environment/project/fr.ac6.managedbuild.config.gnu.cross.exe.debug.1029400139/LANG/delimiter=;
+environment/project/fr.ac6.managedbuild.config.gnu.cross.exe.debug.1029400139/LANG/operation=replace
+environment/project/fr.ac6.managedbuild.config.gnu.cross.exe.debug.1029400139/LANG/value=en_GB.UTF-8
+environment/project/fr.ac6.managedbuild.config.gnu.cross.exe.debug.1029400139/LC_ALL/delimiter=;
+environment/project/fr.ac6.managedbuild.config.gnu.cross.exe.debug.1029400139/LC_ALL/operation=replace
+environment/project/fr.ac6.managedbuild.config.gnu.cross.exe.debug.1029400139/LC_ALL/value=en_GB.UTF-8
+environment/project/fr.ac6.managedbuild.config.gnu.cross.exe.debug.1029400139/PATH/delimiter=;
+environment/project/fr.ac6.managedbuild.config.gnu.cross.exe.debug.1029400139/PATH/operation=replace
+environment/project/fr.ac6.managedbuild.config.gnu.cross.exe.debug.1029400139/PATH/value=D\:\\Program Files\\Ac6\\plugins\\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\\tools\\compiler\\arm-none-eabi\\include;D\:\\Program Files\\Ac6\\plugins\\fr.ac6.mcu.externaltools.arm-none.win32_1.16.0.201807130628\\tools\\compiler\\bin;D\:\\Program Files\\Ac6\\plugins\\fr.ac6.mcu.externaltools.arm-none.win32_1.16.0.201807130628\\tools\\make;D\:/Program Files/Ac6/jre/bin/server;D\:/Program Files/Ac6/jre/bin;D\:/Program Files/Ac6/jre/lib/amd64;C\:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C\:\\Windows\\system32;C\:\\Windows;C\:\\Windows\\System32\\Wbem;C\:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C\:\\Program Files\\Git\\cmd;C\:\\WINDOWS\\system32;C\:\\WINDOWS;C\:\\WINDOWS\\System32\\Wbem;C\:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C\:\\WINDOWS\\System32\\OpenSSH\\;D\:\\Program Files\\PuTTY\\;C\:\\Program Files (x86)\\STMicroelectronics\\STM32 ST-LINK Utility\\ST-LINK Utility;D\:\\Program Files\\Microsoft VS Code\\bin;C\:\\Users\\Fisiel\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\;C\:\\Users\\Fisiel\\AppData\\Local\\Programs\\Python\\Python35\\;C\:\\Users\\Fisiel\\AppData\\Local\\Microsoft\\WindowsApps;D\:\\Program Files\\Microsoft VS Code\\bin;D\:\\Program Files\\Ac6
+environment/project/fr.ac6.managedbuild.config.gnu.cross.exe.debug.1029400139/append=true
+environment/project/fr.ac6.managedbuild.config.gnu.cross.exe.debug.1029400139/appendContributed=true
