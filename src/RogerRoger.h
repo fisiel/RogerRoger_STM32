@@ -1,12 +1,5 @@
-/*
- * motors.h
- *
- *  Created on: 01.09.2018
- *      Author: Fisiel
- */
-
-#ifndef MOTORS_H_
-#define MOTORS_H_
+#ifndef ROGERROGER_H_
+#define ROGERROGER_H_
 
 typedef struct
 {
@@ -126,4 +119,4 @@ typedef struct
 }ROBOT;
 
 
-#endif /* MOTORS_H_ */
+#endif /* ROGERROGER_H_ */

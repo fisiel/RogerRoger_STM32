@@ -139,7 +139,7 @@ void TIM_InitPWM(void)
 	TIM_Cmd(TIM1, ENABLE);
 }
 
-volatile int decision = 0;
+static volatile int decision = 0;
 
 void TIM1_UP_TIM10_IRQHandler(void)
 {
@@ -188,26 +188,26 @@ int main(void)
 	while(1)
 	{
 
-		switch(receive_data())
+		switch(receive_byte(USART2))
 		{
 			case 'a':
 				decision = 0;
-				send_data('0');
+				send_data(USART2, '0');
 				break;
 
 			case 'b':
 				decision = 1;
-				send_data('0');
+				send_data(USART2, '0');
 				break;
 
 			case 'c':
 				decision = 2;
-				send_data('0');
+				send_data(USART2, '0');
 				break;
 
 			default:
 				decision = 0;
-				send_data('=');
+				send_data(USART2, '=');
 				break;
 		}
 	}

@@ -1,10 +1,3 @@
-/*
- * weed_protocol.c
- *
- *  Created on: 22.07.2018
- *      Author: Fisiel
- */
-
 #include "weed_protocol.h"
 
 void send_byte(USART_TypeDef *USART, uint8_t byte)
@@ -22,13 +15,13 @@ void send_data(USART_TypeDef *USART, uint8_t *data)
 		send_byte(USART, data[i]);
 	}
 
-	send_byte(DATA_SEND_STOP, USART);
+	send_byte(DATA_TRANSMISSION_STOP, USART);
 }
 
 uint8_t receive_byte(USART_TypeDef *USART)
 {
 	uint8_t EOR = 0;
-	char received_data;
+	uint8_t received_data;
 
 	do
 	{
@@ -42,11 +35,28 @@ uint8_t receive_byte(USART_TypeDef *USART)
 	return received_data;
 }
 
-uint8_t * receive_data(USART_TypeDef *USART, size_t data_size)
+void receive_data(USART_TypeDef *USART, uint8_t *data)
 {
-	static uint8_t received_data[data_size];
+	uint8_t EOR = 0;
+	size_t data_size = sizeof(data) / sizeof(uint8_t);
 
-	return received_data;
+	do
+	{
+		for(int i = 0; i < data_size; i++)
+		{
+			char buffor = receive_byte(USART);
+
+			if(buffor != DATA_TRANSMISSION_STOP)
+			{
+				data[0] = buffor;
+			}
+			else
+			{
+				EOR = 1;
+			}
+		}
+	}while(!EOR);
+
 }
 
 
