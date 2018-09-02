@@ -38,8 +38,8 @@ typedef struct
 											*/
 
 	uint8_t set_speed_per_int; 			/* 8 bits, Specifies the fractional-part of the set speed of the motor in [%].
-												This parameter can be a number between 0x00 and 0xFF (0x00 -> 0%, 0xFF -> 100%)
-												*/
+											This parameter can be a number between 0x00 and 0xFF (0x00 -> 0%, 0xFF -> 100%)
+											*/
 
 	uint8_t current_speed_rpm_int; 		/* 8 Bits, Specifies the integer-part of the current measured speed of the motor in [rpm].
 											This parameter can be a number between 0x00 and 0xFF (0x00 -> 0rpm, 0xFF -> 255rpm)
@@ -97,8 +97,8 @@ typedef struct
 											*/
 
 	uint8_t set_speed_per_frac; 		/* 8 Bits, Specifies the fractional-part of the set speed of the robot in [%].
-												This parameter can be a number between 0x00 and 0xFF (0x00 -> 0%, 0xFF -> 100%)
-												*/
+											This parameter can be a number between 0x00 and 0xFF (0x00 -> 0%, 0xFF -> 100%)
+											*/
 
 	uint8_t current_speed_ms_int; 		/* 8 Bits, Specifies the integer-part of the current measured speed of the robot in [m/s].
 											This parameter can be a number between 0x00 and 0xFF (0x00 -> 0m/s, 0xFF -> 255m/s)
