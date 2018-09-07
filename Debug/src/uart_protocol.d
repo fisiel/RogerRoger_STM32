@@ -1,6 +1,6 @@
-StdPeriph_Driver/src/stm32f4xx_pwr.o: \
- ../StdPeriph_Driver/src/stm32f4xx_pwr.c \
- D:/github/RogerRoger_STM32/StdPeriph_Driver/inc/stm32f4xx_pwr.h \
+src/uart_protocol.o: ../src/uart_protocol.c ../src/uart_protocol.h \
+ ../src/data_transmission.h \
+ D:/github/RogerRoger_STM32/StdPeriph_Driver/inc/stm32f4xx_usart.h \
  D:/github/RogerRoger_STM32/CMSIS/device/stm32f4xx.h \
  D:/github/RogerRoger_STM32/CMSIS/core/core_cm4.h \
  D:/github/RogerRoger_STM32/CMSIS/core/core_cmInstr.h \
@@ -27,10 +27,13 @@ StdPeriph_Driver/src/stm32f4xx_pwr.o: \
  D:/github/RogerRoger_STM32/StdPeriph_Driver/inc/stm32f4xx_usart.h \
  D:/github/RogerRoger_STM32/StdPeriph_Driver/inc/stm32f4xx_wwdg.h \
  D:/github/RogerRoger_STM32/StdPeriph_Driver/inc/misc.h \
- D:/github/RogerRoger_STM32/StdPeriph_Driver/inc/stm32f4xx_flash_ramfunc.h \
- D:/github/RogerRoger_STM32/StdPeriph_Driver/inc/stm32f4xx_rcc.h
+ D:/github/RogerRoger_STM32/StdPeriph_Driver/inc/stm32f4xx_flash_ramfunc.h
 
-D:/github/RogerRoger_STM32/StdPeriph_Driver/inc/stm32f4xx_pwr.h:
+../src/uart_protocol.h:
+
+../src/data_transmission.h:
+
+D:/github/RogerRoger_STM32/StdPeriph_Driver/inc/stm32f4xx_usart.h:
 
 D:/github/RogerRoger_STM32/CMSIS/device/stm32f4xx.h:
 
@@ -85,5 +88,3 @@ D:/github/RogerRoger_STM32/StdPeriph_Driver/inc/stm32f4xx_wwdg.h:
 D:/github/RogerRoger_STM32/StdPeriph_Driver/inc/misc.h:
 
 D:/github/RogerRoger_STM32/StdPeriph_Driver/inc/stm32f4xx_flash_ramfunc.h:
-
-D:/github/RogerRoger_STM32/StdPeriph_Driver/inc/stm32f4xx_rcc.h:

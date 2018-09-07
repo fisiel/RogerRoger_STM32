@@ -59,7 +59,6 @@ typedef struct
 												0x01 - robot is moving
 												*/
 
-
 	uint8_t driving_mode_1;				/* 4 bits, Specifies the current working mode of the robot.
 											This parameter can be a number:
 												0x00 - robot is driving forward,

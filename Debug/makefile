@@ -28,13 +28,13 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: STM32_Software.elf
+all: RogerRoger_STM32.elf
 
 # Tool invocations
-STM32_Software.elf: $(OBJS) $(USER_OBJS) D:\github\STM32_Software/LinkerScript.ld
+RogerRoger_STM32.elf: $(OBJS) $(USER_OBJS) D:\github\RogerRoger_STM32/LinkerScript.ld
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU GCC Linker'
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/github/STM32_Software/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "STM32_Software.elf" @"objects.list" $(USER_OBJS) $(LIBS) -lm
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/github/RogerRoger_STM32/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "RogerRoger_STM32.elf" @"objects.list" $(USER_OBJS) $(LIBS) -lm
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build
@@ -46,8 +46,8 @@ clean:
 
 post-build:
 	-@echo 'Generating binary and Printing size information:'
-	arm-none-eabi-objcopy -O binary "STM32_Software.elf" "STM32_Software.bin"
-	arm-none-eabi-size "STM32_Software.elf"
+	arm-none-eabi-objcopy -O binary "RogerRoger_STM32.elf" "RogerRoger_STM32.bin"
+	arm-none-eabi-size "RogerRoger_STM32.elf"
 	-@echo ' '
 
 .PHONY: all clean dependents

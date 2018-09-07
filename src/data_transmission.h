@@ -1,6 +1,6 @@
 #ifndef DATA_TRANSMISSION_H_
 #define DATA_TRANSMISSION_H_
-
+#include <stdlib.h>
 #include "stm32f4xx_usart.h"
 
 #define DATA_TRANSMISSION_STOP '\n'

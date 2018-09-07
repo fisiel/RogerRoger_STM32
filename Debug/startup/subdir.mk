@@ -15,7 +15,7 @@ startup/%.o: ../startup/%.s
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Assembler'
 	@echo $(PWD)
-	arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -I"D:/github/STM32_Software/StdPeriph_Driver/inc" -I"D:/github/STM32_Software/inc" -I"D:/github/STM32_Software/CMSIS/device" -I"D:/github/STM32_Software/CMSIS/core" -g -o "$@" "$<"
+	arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -I"D:/github/RogerRoger_STM32/StdPeriph_Driver/inc" -I"D:/github/RogerRoger_STM32/inc" -I"D:/github/RogerRoger_STM32/CMSIS/device" -I"D:/github/RogerRoger_STM32/CMSIS/core" -g -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

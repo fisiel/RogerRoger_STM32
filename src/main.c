@@ -157,16 +157,16 @@ void TIM1_UP_TIM10_IRQHandler(void)
 
 			case 1:
 				TIM1->CCR1 = 0;
-				TIM1->CCR2 = 300 - 1;
-				TIM1->CCR3 = 300 - 1;
+				TIM1->CCR2 = 1000 - 1;
+				TIM1->CCR3 = 1000 - 1;
 				TIM1->CCR4 = 0;
 				break;
 
 			case 2:
-				TIM1->CCR1 = 300 - 1;
+				TIM1->CCR1 = 1000 - 1;
 				TIM1->CCR2 = 0;
 				TIM1->CCR3 = 0;
-				TIM1->CCR4 = 300 - 1;
+				TIM1->CCR4 = 1000 - 1;
 				break;
 
 			default:

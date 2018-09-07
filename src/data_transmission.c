@@ -32,7 +32,7 @@ void send_data(USART_TypeDef *USARTx, uint8_t *data)
 	}
 
 	// Send transmission terminating flag.
-	send_byte(DATA_TRANSMISSION_STOP, USARTx);
+	send_byte(USARTx, DATA_TRANSMISSION_STOP);
 }
 
 
@@ -104,7 +104,3 @@ void receive_data(USART_TypeDef *USARTx, uint8_t *data)
 		}
 	}while(!EOR);
 }
-
-
-
-
